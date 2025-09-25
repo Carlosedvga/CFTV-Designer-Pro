@@ -1,0 +1,28 @@
+{
+  "name": "cftv-designer-pro",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-frontend": "echo 'Build frontend placeholder'",
+    "dist": "electron-builder --windows --x64"
+  },
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^8.0.0",
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "build": {
+    "appId": "com.cftvdesigner.pro",
+    "productName": "CFTV Designer Pro",
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    }
+  }
+}
